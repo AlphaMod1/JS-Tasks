@@ -19,7 +19,27 @@ const obj = [
 ];
 
 //code here
+// let HTML = "";
+// for(let i=0; i<obj.length; i++) {
+//     HTML += `
+//     <div>
+//         <p>${obj[i].name}</p>
+//         <p>${obj[i].age}</p>
+//         <p>${obj[i].info}</p>
+//     </div>`;
+// }
 
+// document.getElementById('output').innerHTML = HTML;
 
+let HTML = '';
+let short = document.getElementById('output');
+for(let x=0; x<obj.length; x++) {
+    HTML = `<div></div>`;
+    HTML += `<p>${obj[x].name}</p>`;
+    HTML += `<p>${obj[x].age}</p>`;
+    HTML += `<p>${obj[x].info}</p>`;
+    HTML += `</div>`;
+    short.insertAdjacentHTML("beforeEnd", HTML);
+}
 
 //answer is in answer.txt

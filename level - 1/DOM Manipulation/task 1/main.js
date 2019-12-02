@@ -5,4 +5,6 @@ const var2 = 24;
 
 //code here
 
+document.querySelector("#output").innerHTML = var1 + var2;
+
 //answer is in answer.txt

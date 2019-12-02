@@ -3,5 +3,12 @@
 
 //code here
 
+let long = document.querySelectorAll('.box');
+
+for(i=0; i<long.length; i++) {
+    if(i%2 == 0){
+        long[i].style.backgroundColor='violet';
+    } 
+};
 
 //answer is in answer.txt

@@ -1,5 +1,7 @@
 let HTML = '';
 let output = document.getElementById('output');
+
+
 for(let i = 0; i<obj.length; i++){
     HTML = `<div>`;
     HTML += `<p>${obj[i].name}</p>`;

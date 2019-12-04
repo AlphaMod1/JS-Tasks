@@ -1,0 +1,5 @@
+let output = document.getElementById('output');
+output.innerHTML = `Height:${window.innerHeight} Width:${window.innerWidth}`;
+window.addEventListener("resize", ()=>{
+output.innerHTML = `Height:${window.innerHeight} Width:${window.innerWidth}`;
+});

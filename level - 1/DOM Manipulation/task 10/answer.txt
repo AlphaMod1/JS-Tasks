@@ -1,0 +1,16 @@
+function btnClick() {
+    let col = document.getElementById('col').value;
+    let row = document.getElementById('row').value;
+    let HTML = '';
+    let count = 0;
+
+    for (let i = 0; i < col; i++) {
+        HTML += `<div>`;
+        for (let j = 0; j < row; j++) {
+            count++;
+            HTML += `<div class="${((count % 2) ? 'white' : 'black')}"></div>`;
+        }
+        HTML += `</div>`
+    }
+    document.getElementById('board').innerHTML = HTML;
+}

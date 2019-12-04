@@ -1,0 +1,14 @@
+    let drop1 = document.getElementById('dropdown-1');
+    let drop2 = document.getElementById('dropdown-2');
+
+    function dropChange1(){
+        drop2.insertAdjacentHTML('beforeend', `<option>${drop1.value}</option>`);
+        drop1.remove(drop1.selectedIndex);
+        drop1.selectedIndex = 0;
+    }
+
+    function dropChange2(){
+        drop1.insertAdjacentHTML('beforeend', `<option>${drop2.value}</option>`);
+        drop2.remove(drop2.selectedIndex);
+        drop2.selectedIndex = 0;
+    }

@@ -1,4 +1,4 @@
-## Vanilla JavaScript DOM Manipulation Vanilla JavaScript
+## Vanilla JavaScript DOM Manipulation
 
 ----------------------------------------------------------
 

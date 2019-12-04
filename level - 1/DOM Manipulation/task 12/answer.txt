@@ -1,0 +1,17 @@
+const words = ['HTML', 'elements', 'browsers', 'JavaScript', 'documents', 'CSS'];
+let pTags = document.querySelectorAll('.text');
+
+for (let i = 0; i < pTags.length; i++) {
+    let txt = pTags[i].innerText;
+    let txtarray = [];
+    for (j = 0; j < words.length; j++) {
+        txtarray = txt.split(words[j]);
+        txt = txtarray.join(`<span class="mark">${words[j]}</span>`);//class mark is a class that I created in a .css file
+    }
+    pTags[i].innerHTML = txt;
+}
+
+
+//-------------------------------------
+//More info about split: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+//More info about join: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join

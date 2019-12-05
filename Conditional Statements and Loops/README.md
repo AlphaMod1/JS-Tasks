@@ -130,5 +130,101 @@ switch(expression) {
 ----------------------------------------------------------
 
 ### For loop:
+Loops can execute a block of code a number of times.
 
-...More info coming soon
+#### Syntax:
+```javascript
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+```
+**Statement 1** is executed (one time) before the execution of the code block.
+
+**Statement 2** defines the condition for executing the code block.
+
+**Statement 3** is executed (every time) after the code block has been executed.
+
+Example:
+```javascript
+for (let i = 0; i < 5; i++) {
+  // code block will be executed 5 times
+}
+```
+
+----------------------------------------------------------
+
+### For..in loop:
+A `for..in` loop iterates over an `Array` or an `Object`
+In the example shown below `i` value is equal to the loops iteration
+
+#### Syntax/Example:
+
+```javascript
+let someArray = [4,5,6,0,9];
+for(let i in someArray){
+  console.log(i);
+  // code will be executed 5 times and the out put is:
+  // 0 1 2 3 4
+}
+```
+----------------------------------------------------------
+
+### For..of loop:
+A `for..of` loop iterates over an `Array` or an `Object`
+In the example shown below `i` value is equal to the objects/arrays value
+
+#### Syntax/Example:
+
+```javascript
+let someArray = [4,5,6,0,9];
+for(let i of someArray){
+  console.log(i);
+  // code will be executed 5 times and the out put is:
+  // 4 5 6 0 9
+}
+```
+
+----------------------------------------------------------
+
+### While loop:
+
+The while loop loops through a block of code as long as a specified condition is true.
+
+#### Syntax:
+
+```javascript
+while (condition) {
+  // code block to be executed
+}
+```
+
+Example:
+```javascript
+let i = 0;
+while (i < 10) {
+  // code block will be executed 10 times
+  i++;
+}
+```
+----------------------------------------------------------
+
+### Do..while loop:
+
+The while loop loops through a block of code as long as a specified condition is true.
+
+#### Syntax:
+
+```javascript
+do{
+// code block to be executed
+} while (condition);
+```
+
+Example:
+```javascript
+let i = 0;
+do{
+  // code block will be executed 10 times
+  i++;
+} while (i < 10);
+```
